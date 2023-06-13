@@ -20,3 +20,20 @@ function opencompanyElements() {
   companyElements.classList.toggle('hide');
   arrow.classList.toggle('rotate');
 }
+
+// const hamburger = document.querySelector('.hamburger');
+// const menu = document.querySelector('.menu');
+
+// hamburger.onclick = toggleMenu;
+
+// function toggleMenu() {
+//   menu.classList.toggle('active');
+// }
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  menu.classList.toggle('active');
+}

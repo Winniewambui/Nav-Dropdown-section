@@ -95,6 +95,8 @@ article {
 .main-image {
   margin: 60px auto;
   margin-right: 80px;
+  width: 500px;
+  height: 700px;
 }
 header h1 {
   font-size: 80px;
@@ -120,52 +122,116 @@ article p {
   background-color: white;
   border: 2px solid hsl(0, 5%, 89%);
 }
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 @media screen and (max-width: 786px) {
-    main{
-        background-color: rgb(217, 219, 221);
-        padding: 0 20px;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    .hamburger{
-        display: block;
-        position: relative;
-        color: black;
-        cursor: pointer;
-    }
-    .nav-links {
-        position: absolute;
-        top: 10%;
-        margin-bottom: 10px;
-    }
-    /* .nav-links ul li{
-        position: absolute;
-       right: 0px;
-    
-    } */
-    .signup-links{
-        position: absolute;
-        top: 50%;
-    }
-    .nav-links,
-    .signup-links {
-        position: absolute;
-        /* display: none; */
-        display: flex;
-        flex-direction: column;
-        right: 0;
-        background-color: rgb(250, 248, 248);
-      color: black;
-  height: 100%;
-  width: 200px;
-  padding: 10px;
-  border-radius: 5px;
-       
-    }
-   
+  main {
+    background-color: rgb(217, 219, 221);
+    padding: 0 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+    color: black;
+    cursor: pointer;
+  }
+  .hamburger.active ~ .menu {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    right: 0;
+    background-color: rgb(250, 248, 248);
+    color: black;
+    height: 100%;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none !important;
+  }
+  .nav-links {
+    position: absolute;
+    top: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-links {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .features-nav {
+    position: relative;
+  }
+  .features-contents {
+    position: absolute;
+    left: 40px;
+    width: 100px;
+    min-height: 150px;
+    background-color: rgb(223, 218, 218);
+    z-index: 10;
+  }
+  .company-nav {
+    position: relative;
+  }
+  .company-contents {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    min-height: 50px;
+    background-color: rgb(223, 218, 218);
+    z-index: 10;
+  }
+  .signup-links li:nth-child(2) {
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 5px 40px;
+    border-radius: 10px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  article {
+    height: 400px;
+    margin: 20px auto;
+    order: 2;
+  }
+  .main-image {
+    margin: 50px auto;
+    width: 400px;
+    height: 500px;
+    order: 1;
+  }
+  header h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  article p {
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 3px;
+    color: hsl(0, 0%, 41%);
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .btn-button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+  .btn-button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid hsl(0, 5%, 89%);
+  }
 }
