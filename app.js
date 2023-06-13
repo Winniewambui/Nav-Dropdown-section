@@ -1,27 +1,22 @@
-const dropDownNavigation = document.querySelector('.nav-links');
+const featuresMenu = document.querySelector('.features-nav');
+const companyMenu = document.querySelector('.company-nav');
+const featureElements = document.querySelector('.features-contents');
+const companyElements = document.querySelector('.company-contents');
+const arrow = document.querySelector('.arrow');
 
-// dropDownNavigation.forEach((item, index) =>{
-//     const feature = item.querySelector('.features-nav');
-//     // const company = item.querySelector('.company-nav');
-    const rotateElement = item.querySelector('.arrow');
+featuresMenu.addEventListener('click', openfeatureElements)
 
-dropDownNavigation.addEventListener('click', dropDown);
-function dropDown (e){
-    e.preventDefault ();
-    item.classList.toggle('open');
-    rotateElement.classList.toggle('rotate');
+companyMenu.addEventListener('click', opencompanyElements)
 
-    if(
-        item.classList.contains('open')){
-        const featureContents = item.querySelector('.features-contents');
-        // const companyContents = item.querySelector('.company-contents');
-
-        featureContents.style.height =`${featureContents.scrollHeight}px`;
-        // companyContents.style.height =`${companyContents.scrollHeight}px`;
-    }
-    else{
-        featureContents.style.height = '0px';
-        // companyContents.style.height = '0px';
-    }
+function openfeatureElements() {
+  event.preventDefault();
+  featureElements.classList.toggle('hide');
+  arrow.classList.toggle('rotate');
+  featureElements.style.height = featureElements.scrollHeight + 'px';
 }
-// });
+
+function opencompanyElements() {
+  event.preventDefault();
+  companyElements.classList.toggle('hide');
+  arrow.classList.toggle('rotate');
+}

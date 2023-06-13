@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Introsection with dropdown navigation</title>
-</head>
-<body>
-<main>
-<nav>
-    <a class="snap-brand" href="index.html">snap</a>
-    <ul class="nav-links">
-        <li><a class="features-nav" href="/">Features</a>
-        <img src="./images/icon-arrow-down.jpg" class="arrow" width="10px">
-        <ul class="features-contents">
-           <li> <img src="./images/icon-todo.jpg" width="12px"/>
-            todo list
-           </li>
-           <li>
-            <img src="./images/icon-calendar.jpg" width="12px"/>
-            calendar
-            </li>
-            <li>
-            <img src="./images/icon-reminders.jpg" width="12px"/>
-            reminders
-            </li>
-            <li>
-            <img src="./images/icon-planning.jpg" width="12px"/>
-            planning
-            </li>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a class="snap-brand" href="index.html">snap</a>
+        <i class="fa fa-bars hamburger" aria-hidden="true"></i>
+
+        <ul class="nav-links">
+          <li>
+            <a class="features-nav" href="/">Features</a>
+            <i class="fa fa-chevron-up arrow rotate" aria-hidden="true"></i>
+            <ul class="features-contents hide">
+              <li><img src="./images/icon-todo.jpg" width="12px" />
+                todo list
+              </li>
+              <li>
+                <img src="./images/icon-calendar.jpg" width="12px" />
+                calendar
+              </li>
+              <li>
+                <img src="./images/icon-reminders.jpg" width="12px" />
+                reminders
+              </li>
+              <li>
+                <img src="./images/icon-planning.jpg" width="12px" />
+                planning
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="company-nav" href="/">Company</a>
+            <i class="fa fa-chevron-up arrow rotate" aria-hidden="true"></i>
+            <ul class="company-contents hide">
+              <li>history</li>
+              <li>our team</li>
+              <li>blog</li>
+            </ul>
+          </li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/"> About</a></li>
         </ul>
-    </li>
-        <li><a class="company-nav"  href="/">Company</a>
-        <img src="./images/icon-arrow-down.jpg" class="arrow" width="10px">
-        <ul class="company-contents">
-            <li>history</li>
-            <li>our team</li>
-            <li>blog</li>
+        <ul class="signup-links right-links">
+          <li><a href="/"> Login </a></li>
+          <li><a href="/"> Register</a></li>
         </ul>
-    </li>
-        <li><a href="/">Careers</a></li>
-        <li><a href="/"> About</a></li>
-    </ul>
-    <ul class="signup-links">
-        <li><a href="/"> Login </a></li>
-        <li><a href="/"> Register</a></li>
-    </ul>
-</nav>
-<div class="main-container">
-    <article>
-<header>
-    <h1>Make</h1>
-    <h1>remote work</h1>
-</header>
-    <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar. </p>
-    <button type="submit" class="btn-button">Learn more</button>
+ 
+      </nav>
+      <div class="main-container">
+        <article>
+          <header>
+            <h1>Make</h1>
+            <h1>remote work</h1>
+          </header>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button type="submit" class="btn-button">Learn more</button>
+        </article>
 
-</article>
-
-    <img src="./image-hero-desktop.png" width="500px" height="700px" class="main-image">
-    <img src="" width="12px" class="main-image">
-
-</div>
-<!-- Challenge by Frontend Mentor. Coded by Your Name Here. -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
+        <img
+          src="./image-hero-desktop.png"
+          width="500px"
+          height="700px"
+          class="main-image"
+        />
+        <img src="" width="12px" class="main-image" />
+      </div>
+      <!-- Challenge by Frontend Mentor. Coded by Your Name Here. -->
+    </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
